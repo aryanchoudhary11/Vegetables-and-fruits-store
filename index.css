@@ -30,6 +30,12 @@
 }
 #nav_bar a{
     text-decoration: none;
+    color: black;
+    width: 70px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 #nav_bar ul {
@@ -47,4 +53,10 @@
 }
 #profile-container span{
     margin-left: 5px;
+}
+
+#nav_bar a:hover{
+    background-color: green;
+    border-radius: 15px;
+    color: white;
 }
