@@ -2,15 +2,22 @@
     margin: 0;
     padding: 0;
     font-family: "Bree Serif";
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
+main{
+    overflow: visible;
+    padding: 2rem; /* Use relative padding to adjust with screen size */
+
+} 
 #logo_image{
-    width: 35px;
+    width: 20px;
+    margin-top: 3px;
 }
 #logo-container{
     margin: 10px 5px 10px 30px;
     display: flex;
     align-items: center;
+    justify-content: center;
 
 }
 #logo_name{
@@ -18,15 +25,20 @@
     font-weight: 0;
     font-family: "Lobster";
     margin-left: 2px;
+    font-size: 20px;
 }
-.header_container{
+.header_container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: static;
+    position: sticky;
+    top: 0;
     width: 100%;
-    box-shadow: 0 2px 12px #848783;
+    background-color: #fff;
+    box-shadow: 0 10px 12px rgba(205, 220, 200, 0.7);
+    z-index: 10000; 
 }
+
 #nav_bar{
     display: flex;
     /* align-items: center; */
@@ -72,16 +84,21 @@
 
 #home-container {
     margin-top: 20px;
+    max-height: 400px; 
+}
+
+
+
+#home-container .home-slide1{
     height: auto;
-    max-height: 600px; 
+    display: flex;
+    max-width: 100%;
 }
-
-
-#home-container img {
-
-    height: 400px;
+#home-container  img{
+    min-width: 50px;
+    max-width: 500px;
+    height: auto;
 }
-
 
 
 #home-container .swiper-slide{
@@ -93,13 +110,15 @@
     
 }
 
-.swiper-slide h2{
+.slogan{
     font-size: 40px;
     font-family: "Rubik Wet Paint";
+    text-align: center;
+    word-wrap: none;
+    margin: 10px 0;
 }
 
 .text-btn #shop-now{
-    height: 50px;
     font-size: 18px;
     width: 120px;
     color: #45bc22;
@@ -110,22 +129,24 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    /* margin-left: 50px; */
+    margin-top: 10px;
+}
+.text-btn #shop-now span{
+    overflow-y: hidden;
 }
 .text-btn #shop-now:hover{
-    color: #7efe57;
+    color: #f16a16;
 }
 
 .home-slide1{
     display: flex;
     align-items: center;
-    gap: 300px;
-    justify-content: center;
+    /* gap: 300px; */
+    justify-content: space-between;
     margin-top: 70px;
-    width: 100%;
+    width: auto;
     margin: 20px;
-
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     
 }
 
@@ -136,4 +157,9 @@
     justify-content: center;
     flex-direction: column;
     font-size: large;
+}
+
+@media (max-width: 925px) {
+    
+    
 }
