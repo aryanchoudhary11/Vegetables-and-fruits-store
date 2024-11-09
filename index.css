@@ -115,10 +115,10 @@ main{
     font-family: "Rubik Wet Paint";
     text-align: center;
     word-wrap: none;
-    margin: 10px 0;
+    margin-bottom: 10px;
 }
 
-.text-btn #shop-now{
+#text-btn #shop-now{
     font-size: 18px;
     width: 120px;
     color: #45bc22;
@@ -131,32 +131,35 @@ main{
     cursor: pointer;
     margin-top: 10px;
 }
-.text-btn #shop-now span{
+#text-btn #shop-now span{
     overflow-y: hidden;
 }
-.text-btn #shop-now:hover{
+#text-btn #shop-now:hover{
     color: #f16a16;
 }
 
-.home-slide1{
+#home-slide{
     display: flex;
     align-items: center;
-    /* gap: 300px; */
     justify-content: space-between;
-    margin-top: 70px;
     width: auto;
     margin: 20px;
-    /* flex-wrap: nowrap; */
-    
 }
 
-
-.text-btn{
+#text-btn{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     font-size: large;
+}
+
+.slogan2{
+    font-size: 30px;
+    font-family: "Rubik Wet Paint";
+    text-align: center;
+    word-wrap: none;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 925px) {
