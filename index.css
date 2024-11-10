@@ -85,6 +85,7 @@ main{
 
 #home-container {
     display: flex;
+    background-color: rgba(223, 252, 213, 0.7);
 }
   
 #home-container img {
@@ -152,10 +153,36 @@ main{
 }
 
 
+
+
+.categories-container{
+    margin: 40px 70px;
+
+}
+
+#categories-heading span{
+    font-size: 20px;
+}
+.categories-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box{
+    margin-top: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box img{
+    height: 70%;
+}
+
 @media (max-width: 815px) {
     
     #home-container img {
-        width: auto;
         max-width: 300px;
         transition: all 0.5s ease-in-out;
     }
@@ -169,15 +196,12 @@ main{
         margin-bottom: 10px;
     }
 }
-@media (max-width: 412px) {
+@media (max-width: 429px) {
     
     #home-container img {
-        width: auto;
         max-width: 200px;
         transition: all 0.5s ease-in-out;
     }
-    
-    
     .slogan{
         font-size: 18px;
         font-family: "Rubik Wet Paint";
@@ -197,16 +221,38 @@ main{
     }
 
 }
-
-@media (max-width: 360px) {
+@media (max-width: 587px) {
     
     #home-container img {
-        width: auto;
         max-width: 180px;
         transition: all 0.5s ease-in-out;
     }
+    .slogan{
+        font-size: 17px;
+        font-family: "Rubik Wet Paint";
+        text-align: center;
+        word-wrap: none;
+        margin-bottom: 10px;
+    }
+    .slogan2{
+        font-size: 17px;
+        font-family: "Rubik Wet Paint";
+        text-align: center;
+        word-wrap: none;
+        margin-bottom: 10px;
+    }
+    #home-container .description{
+        font-size: 9px;
+    }
+
+}
+
+@media (max-width: 376px) {
     
-    
+    #home-container img {
+        max-width: 180px;
+        transition: all 0.5s ease-in-out;
+    }    
     .slogan{
         font-size: 15px;
         font-family: "Rubik Wet Paint";
@@ -224,8 +270,28 @@ main{
     #home-container .description{
         font-size: 8px;
     }
-    .swiper-button-next, .swiper-button-prev{
-        font-size: 5px;
+}
+@media (max-width: 391px) {
+    
+    #home-container img {
+        max-width: 180px;
+        transition: all 0.5s ease-in-out;
+    }    
+    .slogan{
+        font-size: 15px;
+        font-family: "Rubik Wet Paint";
+        text-align: center;
+        word-wrap: none;
+        margin-bottom: 10px;
     }
-
+    .slogan2{
+        font-size: 12px;
+        font-family: "Rubik Wet Paint";
+        text-align: center;
+        word-wrap: none;
+        margin-bottom: 10px;
+    }
+    #home-container .description{
+        font-size: 8px;
+    }
 }
