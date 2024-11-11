@@ -1,2 +1,2 @@
 # Vegetables-and-fruits-store
- A online store for vegetables and fruits. Developed using HTML, CSS, JavaScript.
+ A online store for vegetables, fruits, nuts and Milk products. Basically platform for farm products. Developed using HTML, CSS, JavaScript.
