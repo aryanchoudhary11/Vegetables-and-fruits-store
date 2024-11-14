@@ -4,8 +4,7 @@
     font-family: "Funnel Sans";
 }
 main{
-    overflow: visible;
-    /* padding: 2rem; */
+    /* overflow: visible; */
 
 } 
 #logo_image{
@@ -254,6 +253,24 @@ main{
 }
 #Learn-more:hover{
     color: #f16a16;
+}
+
+.reviews{
+    margin: 150px 180px;
+}
+.reviews h2{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.customers-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 4rem;
+    margin-top: 30px;
+}
+#cust3{
+    height: 600px;
 }
 
 @media (max-width: 815px) {
