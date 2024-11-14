@@ -223,7 +223,39 @@ main{
 .box4{
     background-color: #f6dede;
     border-radius: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(260px,auto));
+    gap: 1.5rem;
 }
+
+.about-container{
+    margin: 150px 180px;
+    /* max-width: 968px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, auto));
+    gap: 1.5rem;
+}
+
+.about-container img{
+    height: 300px;
+}
+#about-content #about-heading{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #45bc22;
+}
+#about-content p{
+    margin: 0.5rem 0 1rem;
+}
+#Learn-more{
+    background: none;
+    color: #45bc22;
+    border: none;
+    cursor: pointer;
+}
+#Learn-more:hover{
+    color: #f16a16;
+}
+
 @media (max-width: 815px) {
     
     #home-container img {
