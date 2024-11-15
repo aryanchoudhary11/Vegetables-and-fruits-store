@@ -14,3 +14,14 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+let menuIcon = document.querySelector('#menu-box');
+let navbar = document.querySelector('#nav_bar');
+
+menuIcon.onclick = () => {
+  navbar.classList.toggle('active');
+}
+
+window.onscroll = () => {
+  navbar.classList.remove('active');
+}
