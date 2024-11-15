@@ -307,13 +307,11 @@
 .extra_details{
     background-color: #fafbfc;
     height: auto;
-    /* margin: 45px; */
     width: 100%;
 }
 .inner_extra_details{
     margin-left: 15%;
     margin-right: 15%;
-
     display: flex;
     justify-content: space-evenly;
 }
@@ -333,22 +331,7 @@
     color: #696b79;
     display: block;
     font-size: 15px;
-
     line-height: 1.8;
-}
-
-#images_details{
-
-    display: flex;
-    font-size: 15px;
-    padding-bottom: 5px;
-    height: auto;
-
-
-}
-
-#images_details img{
-    width: 130px;
 }
 
 .inner_extra_details1{
@@ -415,43 +398,8 @@
 }
 
 
-.return_text b{
-    color: #282c3f;
-}
-.return{
-    display: flex;
-    margin-top: 30px;
-    color: #696b79;
-    height: auto;
-    align-items: center;
-
-}
-.return_image{
-    width: 120px;
-
-}
-.return_image img{
-    width: 50px;
-    height: auto;
-
-}
-.return_text{
-
-    font-size: 15px;
-}
-
 
 .inner_extra_details5{
-    margin-left: 16%;
-    margin-right: 16%;
-
-    display: flex;
-
-    flex-direction: column;
-}
-
-
-.inner_extra_details6{
     margin-left: 16%;
     margin-right: 16%;
 
@@ -461,56 +409,47 @@
 
     border-bottom: solid 1px #aeb0ba;
 }
-.inner_extra_details6 p{
+.inner_extra_details5 p{
     margin-top: 40px;
 
 }
 
-.inner_extra_details6 p a{
+.inner_extra_details5 p a{
     font-weight: 700;
     text-decoration: none;
     color: #6279d4;
 }
 
 
-.inner_extra_details7{
+.inner_extra_details6{
     margin-left: 16%;
     margin-right: 16%;
-
     display: flex;
-
     justify-content: space-between;
-    flex-direction: column;
-
-    
+    flex-direction: column; 
 }
 
-#footer_headings7{
+#footer_headings6{
     font-weight: 700;
     margin-top: 30px;
     font-size: 17px;
     margin-bottom: 20px;
     color: #282c3f;
     width: 100%;
-
 }
 
 .office{
     display: flex;
     justify-content: space-between;
     margin-bottom: 120px;
-
-
 }
 
-.inner_extra_details8{
-
+.inner_extra_details7{
     margin-right: 16%;
     margin-top: 140px;
 
 }
-.inner_extra_details8 a{
-
+.inner_extra_details7 a{
     font-weight: 700;
     text-decoration: none;
     color: #6279d4;
@@ -543,20 +482,6 @@
     #footer_headings{
         font-size: 10px;
     }
-
-    
-
-    .return_image{
-        width: 180px;
-    
-    }
-    .return_image img{
-        width: 100%;
-        
-    }
-    .return_text{
-        font-size: 10px;
-    }
 }
 
 @media (max-width: 815px) {
@@ -565,8 +490,6 @@
         max-width: 300px;
         transition: all 0.5s ease-in-out;
     }
-    
-    
     .slogan{
         font-size: 25px;
         font-family: "Rubik Wet Paint";
