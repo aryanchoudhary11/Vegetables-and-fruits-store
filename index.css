@@ -3,10 +3,9 @@
     padding: 0;
     font-family: "Funnel Sans";
 }
-main{
-    /* overflow: visible; */
-
-} 
+#home-container{
+    margin-top: 70px;
+}
 #logo_image{
     width: 20px;
     margin-top: 3px;
@@ -29,7 +28,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     background-color: #fff;
@@ -268,9 +267,43 @@ main{
     grid-template-columns: repeat(auto-fit, minmax(280px, auto));
     gap: 4rem;
     margin-top: 30px;
+    
 }
-#cust3{
-    height: 600px;
+.customers-container .review-box:hover{
+    transform: translateY(10px);
+    cursor: pointer;
+}
+
+.customers-container .review-box{
+    padding: 20px;
+    box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
+    border-radius: 0.5rem;
+}
+.review-box i{
+    color: #45bc22;
+    font-size: 24px;
+}
+.review-box .stars i{
+    color: #f16a16;
+    font-size: 1rem;
+}
+.review-box p{
+    font-size: 0.9rem;
+}
+.review-profile{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    column-gap: 0.5rem;
+}
+.review-profile img{
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.review-profile h4{
+    font-weight: 600;
 }
 
 @media (max-width: 815px) {
