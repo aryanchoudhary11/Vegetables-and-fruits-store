@@ -95,6 +95,10 @@
     font-weight: 600;
     cursor: pointer;
 }
+#profile-container a{
+    color: black;
+    text-decoration: none;
+}
 
 
 
