@@ -76,6 +76,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+#profile-container a{
+    color: black;
+    text-decoration: none;
 }
 .items-count{
     background-color: #45bc22;
