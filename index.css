@@ -583,6 +583,15 @@
     .home-container .description{
         font-size: 10px;
     }
+    .categories-container{
+        margin: 100px 10px;
+    }
+    #about{
+        grid-template-columns: repeat(auto-fit, minmax(30rem, auto));
+    }
+    .categories-list{
+        grid-template-columns: repeat(auto-fit, minmax(10rem, auto));
+    }
 
 }
 
