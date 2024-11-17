@@ -27,6 +27,15 @@ function displayBagItems() {
         innerHTML += generateHTML(bagItem);
     });
     containerElement.innerHTML = innerHTML;
+
+}
+
+function removeFromBag(itemName){
+    bag = bag.filter(bagItemName => bagItemName.name != itemName);
+    localStorage.setItem('bag', JSON.stringify(bag));
+    loadBagItemObjects();
+    displayBagCount();
+    displayBagItems();
 }
 
 function generateHTML(item){
@@ -45,13 +54,13 @@ function generateHTML(item){
                     <span class="quantity">1</span><span><b>Kg</b></span>
                     <button class="increase-btn">+</button>
                 </div>
-                <button id="remove-btn">Remove</button>
+                <button id="remove-btn" onclick = "removeFromBag('${item.name}')">Remove</button>
             </div>
         </div>
     </div>`
 }
 // Function to handle increase and decrease buttons
-// document.addEventListener('DOMContentLoaded', () => {
+
     document.querySelectorAll('.boxes-container').forEach((box, index) => {
         const decreaseBtn = box.querySelector('.decrease-btn');
         const increaseBtn = box.querySelector('.increase-btn');
@@ -75,4 +84,3 @@ function generateHTML(item){
             quantityDisplay.textContent = quantity;
         });
     });
-// });
