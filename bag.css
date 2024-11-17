@@ -177,9 +177,74 @@
     font-weight: bold;
 }
 
+.empty-bag {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    width: 100vw;        
+    font-size: 2.5rem;   
+    color: #756b6b;         
+    text-align: center;   
+}
+
+.bag-page{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px,auto));
+    gap: 8.5rem;
+    justify-content: center;
+}
+.billing-container{
+    margin-top: 150px;
+    max-width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 
 
+}
+.billing-details{
+
+    padding: 10px;
+    width: 300px;
+}
+.billing-container #total-price, #total-discount, #Delievery-fees{
+    display: flex;
+    justify-content: space-between;
+}
+.billing-container #total-price{
+    margin-top: 10px;
+}
+.billing-container #discount-price{
+    color: #11c3c3;
+}
+.billing-container #Delievery-fees sub{
+    color: #f16a16;
+    font-size: 11px;
+}
+.billing-container #Delievery-fees{
+    padding-bottom: 10px;
+    border-bottom: solid 1px #aeb0ba;
+}
+.total-amount{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    font-weight: 600;
+}
+.place-order-btn button{
+    width: 300px;
+    height: 33px;
+    margin-top: 10px;
+    background-color: #45bc22;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+}
+.place-order-btn button:hover{
+    background-color: #f16a16;
+}
 
 
 
@@ -355,7 +420,53 @@
         font-size: 10px;
     }
 }
-
+@media (max-width: 976px){
+    .billing-container{
+        margin: -150px 0 40px 47px;
+        max-width: 400px;
+    }
+    .billing-details{
+        width: 400px;
+    }
+    .total-amount{
+        width: 400px;
+    }
+    .place-order-btn button{
+        width: 400px;
+    }
+    .boxes-container{
+        height: 220px;
+        width: 400px;
+    }
+    .item-details #name{
+        font-size: 18px;
+    }
+    .item-details #price{
+        font-size: 14px;
+    }
+    #item img{
+        height: 130px;
+        width: 135px;
+    }
+    .item-details #discount{
+        font-size: 12px;
+    
+    }
+    .buttons{
+        height: 30px;
+    }
+    .buttons #remove-btn{
+        width: 75px;
+    }
+    .counter button {
+        width: 25px;
+        height: 25px;
+        font-size: 17px;
+    }
+    .counter span.quantity {
+        font-size: 16px;
+    }
+}
 @media (max-width: 815px) {
     #menu-box{
         display: initial;
