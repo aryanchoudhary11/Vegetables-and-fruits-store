@@ -63,7 +63,7 @@ function generateHTML(item){
             </div>
             <div class="item-details">
                 <span id="name">${item.name}</span><br>
-                <span id="price">MRP: <s>${item.price}</s> ${item.discounted_price}</span>
+                <span id="price">MRP: <s>₹${item.price}</s> ₹${item.discounted_price}</span>
                 <span id="discount">(${item.discount} OFF)</span><br>
                 <div class="buttons">
                     <div class="counter">
