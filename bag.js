@@ -137,6 +137,25 @@ function displayBilling(){
 }
 
 
+// Select the popup and close button
+const popup = document.getElementById('order-popup');
+const closePopupButton = popup.querySelector('.close-popup');
+
+// Function to show the popup
+function showPopup() {
+    popup.style.display = 'flex'; // Show the popup
+    setTimeout(() => {
+        popup.style.display = 'none'; // Hide the popup after 3 seconds
+    }, 1000000000);
+}
+
+// Add event listener to the PLACE ORDER button
+document.querySelector('.place-order-btn button').addEventListener('click', showPopup);
+
+// Add event listener to the close button
+closePopupButton.addEventListener('click', () => {
+    popup.style.display = 'none';
+});
 
 // Function to handle increase and decrease buttons
 

@@ -207,14 +207,14 @@ const items = [
         price: '1150',
         discounted_price: '943',
         discount: '18%',
-        imagePath: 'img/ghee.jpg',
+        imagePath: 'img/ghee.png',
     },
     {
         name: 'Cow Milk',
         price: '60',
         discounted_price: '54.6',
         discount: '9%',
-        imagePath: 'img/milk png.png',
+        imagePath: 'img/milk.png',
     },
     {
         name: 'Paneer',
