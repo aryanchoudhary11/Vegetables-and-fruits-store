@@ -1,4 +1,3 @@
-
 let menuIcon = document.querySelector('#menu-box');
 let navbar = document.querySelector('#nav_bar');
 menuIcon.onclick = () => {
